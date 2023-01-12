@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Transporte BiancaBar</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="nav-wrapper">
       
       <span>
-        <a class="brand-logo center" href="">
+        <a class="brand-logo center" href="index.html">
           <div class="message">
             <div class="word1">
               BiancaBar
@@ -26,22 +26,26 @@
 
 
       <ul class="right hide-on-med-and-down">
-        <li><a id="textoNav" href="#">¿Quiénes Somos?</a></li><li><a id="textoNav" href="#">Galería</a></li><li><a id="textoNav" href="#">Contacto</a></li>
+        <li>
+          <a id="textoNav" href="#quienes">¿Quiénes Somos?</a></li>
+          <li><a id="textoNav" href="#galeria">Galería</a></li>
+          <li><a id="textoNav" href="#contacto">Contacto</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">¿Quiénes Somos?</a></li><li><a href="#">Galería</a></li><li><a href="#">Contacto</a></li>
+        <li><a href="quienes">¿Quiénes Somos?</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
+  <h1 class="header center titulo">Transporte Biancabar</h1>
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 class="header center titulo">Transporte Biancabar</h1>
-
+        <a name="quienes"></a>
       </div>
     </div>
     <div class="parallax"><img class ="responsive-img" id="presentacion" src="./img/Presentacion.jpeg" alt="Unsplashed background img 1"></div>
@@ -50,34 +54,41 @@
 
   <div class="container">
     <div class="section">
-      <h2 class="black-text center tituloSecundario" >¿Quiénes somos?</h2>
+      <h2 name="1" class="black-text center tituloSecundario" >¿Quiénes somos?</h2>
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4 center">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center black-text"><i class="material-icons">directions_car</i></h2>
+            <h5 class="center tituloTerciario">TRAYECTORIA</h5>
 
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            
+            <img id="imagenConductor" class="circle responsive-img" src="./img/trayectoria.jpeg" alt="" srcset="">
+            
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4 center">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
+            <h2 class="center black-text"><i class="material-icons">group</i></h2>
+            <h5 class="center tituloTerciario">PROFESIONALES</h5>
+            
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <img id="imagenConductor" class="circle responsive-img" src="./img/Conductores.jpeg" alt="" srcset="">
+
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4 center">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center black-text"><i class="material-icons">map</i></h2>
+            <h5 class="center tituloTerciario">Horarios y Recorridos</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+
+            <img id="imagenConductor" class="circle responsive-img" src="./img/recorrido.jpeg" alt="" srcset="">
           </div>
         </div>
       </div>
@@ -92,14 +103,14 @@
 
   <div class="container">
     <div class="section">
-
+      <a name="galeria"></a>
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h2 class="tituloSecundario">Galería</h2>
           
-          <div class="carousel carousel-slider carousel">
-            <a class="carousel-item"><img src="./img/Imagen (1).jpeg"></a>
+          <div class="carousel carousel-slider carrusel">
+            <a class="carousel-item"><img src="./img/imagen (1).jpeg"></a>
             <a class="carousel-item"><img src="./img/Imagen (2).jpeg"></a>
             <a class="carousel-item"><img src="./img/Imagen (3).jpeg"></a>
             <a class="carousel-item"><img src="./img/Imagen (4).jpeg"></a>
@@ -138,14 +149,15 @@
   <footer class="page-footer footer">
     <div class="container">
       <div class="row">
-    
+        <a name="contacto"></a>
         <div class="col l12 s12 valign center">
           <h2 class="black-text tituloSecundario" >Contáctanos</h2>
+          
           <ul>
-            <li class="contacto"><a href="https://api.whatsapp.com/send?phone=+542615179411&text=Hola!, Me comunico desde la web para más información!"><img class="responsive-img icono" src="./img/whatsapp.png" alt="" srcset=""></a></li>
-            <li class="contacto"><a href="#!"><img class="responsive-img icono" src="./img/facebook.png" alt="" srcset=""></a></li>
-            <li class="contacto"><a href="https://www.instagram.com/americobarneche/"><img class="responsive-img icono" src="./img/instagram.png" alt="" srcset=""></a></li>
-            <li class="contacto"><a href="mailto:americobar@hotmail.com"><img class="responsive-img icono" src="./img/email.png" alt="" srcset=""></a></li>
+            <li class="contacto"><a href="https://api.whatsapp.com/send?phone=+542615179411&text=Hola!, Me comunico desde la web para más información!" target="_blank"><img class="responsive-img icono" src="./img/whatsapp.png" alt="" srcset=""></a></li>
+            <li class="contacto"><a href="https://www.facebook.com/americobar" target="_blank"><img class="responsive-img icono" src="./img/facebook.png" alt="" srcset=""></a></li>
+            <li class="contacto"><a href="https://www.instagram.com/americobarneche/" target="_blank"><img class="responsive-img icono" src="./img/instagram.png" alt="" srcset=""></a></li>
+            <li class="contacto"><a href="mailto:americobar@hotmail.com" target="_blank"><img class="responsive-img icono" src="./img/email.png" alt="" srcset=""></a></li>
 
           </ul>
         </div>
